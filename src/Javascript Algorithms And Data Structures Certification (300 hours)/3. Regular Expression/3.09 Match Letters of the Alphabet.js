@@ -29,3 +29,7 @@ Be sure to match both upper- and lowercase letters.
     let alphabetRegex = /change/; // Change this line
     let result = alphabetRegex; // Change this line
 */
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi;
+let result = quoteSample.match(alphabetRegex);
