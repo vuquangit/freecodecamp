@@ -40,3 +40,12 @@ two consecutive digits.
     let result = pwRegex.test(sampleWord);
 
 */
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+let result = pwRegex.test(sampleWord);
+
+console.log(result);
+console.log(pwRegex.test("bana12"));
+console.log(pwRegex.test("ad9iou3"));
+console.log(pwRegex.test("123456"));
