@@ -32,3 +32,8 @@ exists on the array, and false if it does not.
     console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 */
+
+quickCheck = (arr, elem) => (arr.indexOf(elem) >= 0 ? true : false);
+
+// change code here to test different cases:
+console.log(quickCheck(["squash", "onions", "shallots"], "mushrooms"));
