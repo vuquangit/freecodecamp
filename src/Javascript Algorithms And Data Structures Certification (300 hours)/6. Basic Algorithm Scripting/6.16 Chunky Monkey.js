@@ -16,8 +16,9 @@ Write a function that splits an array (first argument) into groups the length of
 
 const chunkArrayInGroups = (arr, size) => {
   let a = [];
-  while (arr.length) {
-    a.push(arr.splice(0, size));
+  let arrTemp = [...arr];
+  while (arrTemp.length) {
+    a.push(arrTemp.splice(0, size));
   }
   return a;
 };
