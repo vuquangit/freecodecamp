@@ -32,5 +32,11 @@ Do not mutate the original array provided to the function.
     }
     var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
     nonMutatingSplice(inputCities);
-
 */
+
+nonMutatingSplice = cities => cities.slice(0, 3);
+
+let inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+console.log(inputCities);
+console.log(nonMutatingSplice(inputCities));
+console.log(inputCities);
