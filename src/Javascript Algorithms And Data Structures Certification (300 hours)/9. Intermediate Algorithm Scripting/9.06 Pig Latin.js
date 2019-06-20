@@ -21,14 +21,13 @@ Input strings are guaranteed to be English words in all lowercase.
 
 //https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/pig-latin/
 const translatePigLatin = str => {
-  const check = obj =>
-    ["a", "i", "u", "e", "o"].indexOf(str.charAt(obj)) == -1
-      ? check(obj + 1)
-      : obj;
+  const checkVowel = index =>
+    "ueoai".indexOf(str.charAt(index)) === -1 ? checkVowel(index + 1) : index;
 
   return str
-    .substr(check(0))
-    .concat((check(0) === 0 ? "w" : str.substr(0, check(0))) + "ay");
+    .substr(checkVowel(0))
+    .concat(checkVowel(0) === 0 ? "w" : str.substr(0, checkVowel(0)))
+    .concat("ay");
 };
 
 console.log(translatePigLatin("california")); // "aliforniacay"
