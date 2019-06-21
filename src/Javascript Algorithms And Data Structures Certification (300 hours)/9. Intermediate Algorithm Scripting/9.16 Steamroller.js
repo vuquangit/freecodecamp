@@ -13,22 +13,33 @@ function steamrollArray(arr) {
 steamrollArray([1, [2], [3, [[4]]]]);
 */
 
-function steamrollArray(arr) {
-  console.log(arr.length);
-  console.log(typeof arr[0]);
-  console.log(typeof arr[1]);
-  console.log(typeof arr[2]);
-  console.log(typeof arr[3]);
+// https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/steamroller/
+const steamrollArray = arr => {
+  let flat = [].concat(...arr);
+  return flat.some(Array.isArray) ? steamrollArray(flat) : flat;
+};
+console.log(steamrollArray([1, [2], [3, [[4]]], {}, []]));
+//should return [1, 2, 3, 4, {}]
 
-  console.log(arr);
+console.log(steamrollArray([[["a"]], [["b"]]]));
+// should return ["a", "b"]
 
-  return typeof arr === "object"
-    ? arr.reduce((acc, value, index) => {
-        return typeof value === "object"
-          ? steamrollArray(...value)
-          : [...acc, value];
-      }, [])
-    : arr;
-}
+const steamrollArray_2 = arr =>
+  arr
+    .toString()
+    .replace(",,", ",") // "1,2,,3" => "1,2,3"
+    .split(",") // ['1','2','3']
+    .map(function(v) {
+      if (v == "[object Object]") {
+        // bring back empty objects
+        return {};
+      } else if (isNaN(v)) {
+        // if not a number (string)
+        return v;
+      } else {
+        return parseInt(v); // if a number in a string, convert it
+      }
+    });
 
-console.log(steamrollArray([1, [2], [3, [[4]]]]));
+console.log(steamrollArray_2([1, [], {}, "a", [3, [[4]]]]));
+// should return [1, {}, 3, 4]
