@@ -25,25 +25,26 @@ These methods must be the only available means of interacting with the object.
 */
 
 let Person = function(firstAndLast) {
-  this.getFirstName = () => firstAndLast.split(" ")[0];
-  this.getLastName = () => firstAndLast.split(" ")[1];
-  this.getFullName = () => firstAndLast;
+  let fullName = firstAndLast;
+  this.getFirstName = () => fullName.split(" ")[0];
+  this.getLastName = () => fullName.split(" ")[1];
+  this.getFullName = () => fullName;
   this.setFirstName = first =>
-    (firstAndLast = [first, firstAndLast.split(" ")[1]].join(" "));
+    (fullName = [first, fullName.split(" ")[1]].join(" "));
   this.setLastName = last =>
-    (firstAndLast = [firstAndLast.split(" ")[0], last].join(" "));
-  this.setFullName = firstAndLast => (this.firstAndLast = firstAndLast);
+    (fullName = [fullName.split(" ")[0], last].join(" "));
+  this.setFullName = firstAndLast => (fullName = firstAndLast);
 };
 
 var bob = new Person("Bob Ross");
 console.log(Object.keys(bob).length);
 console.log(bob.getFullName());
 
-//bob.setFirstName("Haskell");
+bob.setFirstName("Haskell");
 console.log(bob.getFullName());
 
-//bob.setLastName("Curry");
+bob.setLastName("Curry");
 console.log(bob.getFullName());
 
-bob.setFullName("Haskell Curry");
+bob.setFullName("Miley cyrus");
 console.log(bob.getLastName());
