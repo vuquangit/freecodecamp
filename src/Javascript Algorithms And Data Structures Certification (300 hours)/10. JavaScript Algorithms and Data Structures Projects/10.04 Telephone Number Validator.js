@@ -30,3 +30,15 @@ valid US phone number; otherwise return false.
     telephoneCheck("555-555-5555");
 
 */
+
+// https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator/
+const telephoneCheck = str =>
+  /^(1\s?)?(\(\d{3}\)|\d{3})(\s|-)?(\d{3})[\s|-]?(\d{4})$/.test(str);
+
+console.log(telephoneCheck("1 (555)-555-5555")); //true
+console.log(telephoneCheck("1(555)555-5555")); //true
+console.log(telephoneCheck("(555)555-5555")); //true
+console.log(telephoneCheck("555-5555")); //false
+console.log(telephoneCheck("1 456 789 4444")); //true
+console.log(telephoneCheck("10 (757) 622-7382")); //false
+console.log(telephoneCheck("(555)5(55?)-5555")); //false
