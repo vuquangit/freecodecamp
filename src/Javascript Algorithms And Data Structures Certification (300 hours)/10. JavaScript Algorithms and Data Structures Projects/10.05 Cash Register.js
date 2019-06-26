@@ -55,17 +55,17 @@ One-hundred Dollars	$100 (ONE HUNDRED)
 */
 
 // https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register/
-
+// Modified
 const currency = {
-  Penny: 0.01,
-  Nickel: 0.05,
-  Dime: 0.1,
-  Quarter: 0.25,
-  Dollar: 1,
-  "Five Dollars": 5,
-  "Ten Dollars": 10,
-  "Twenty Dollars": 20,
-  "One-hundred Dollars": 100
+  PENNY: 0.01,
+  NICKEL: 0.05,
+  DIME: 0.1,
+  QUARTER: 0.25,
+  ONE: 1,
+  FIVE: 5,
+  TEN: 10,
+  TWENTY: 20,
+  "ONE HUNDRED": 100
 };
 const checkCashRegister = (price, cash, cid) => {
   let diff = cash - price;
@@ -73,14 +73,38 @@ const checkCashRegister = (price, cash, cid) => {
   if (total < diff) return { status: "INSUFFICIENT_FUNDS", change: [] };
   else if (total === diff) return { status: "CLOSED", change: cid };
   else {
-    let list = Object.keys(currency)
+    let denom = Object.keys(currency)
       .map(item => {
-        return { "Currency Unit": item, Amount: currency[item] };
+        return { name: item, val: currency[item] };
       })
-      .sort((a, b) => b.Amount - a.Amount);
-    console.log(list);
+      .sort((a, b) => b.val - a.val);
 
-    return { status: "OPEN", change: "..." };
+    let register = [...cid].reduce((acc, curr) => {
+      acc[curr[0]] = curr[1];
+      return acc;
+    }, []);
+
+    let arr = denom.reduce((acc, curr) => {
+      let value = 0;
+      while (register[curr.name] > 0 && diff >= curr.val) {
+        diff -= curr.val;
+        register[curr.name] -= curr.val;
+        value += curr.val;
+        diff = Math.round(diff * 100) / 100;
+      }
+
+      if (value > 0) {
+        acc.push([curr.name, value]);
+      }
+
+      return acc;
+    }, []);
+
+    if (arr.length < 1 || diff > 0) {
+      return { status: "INSUFFICIENT_FUNDS", change: [] };
+    }
+
+    return { status: "OPEN", change: arr };
   }
 };
 
@@ -98,3 +122,19 @@ console.log(
   ])
 );
 // should return {status: "OPEN", change: [["QUARTER", 0.5]]}
+
+console.log(
+  checkCashRegister(3.26, 100, [
+    ["PENNY", 1.01],
+    ["NICKEL", 2.05],
+    ["DIME", 3.1],
+    ["QUARTER", 4.25],
+    ["ONE", 90],
+    ["FIVE", 55],
+    ["TEN", 20],
+    ["TWENTY", 60],
+    ["ONE HUNDRED", 100]
+  ])
+);
+// should return {status: "OPEN", change: [["TWENTY", 60], ["TEN", 20], ["FIVE", 15], ["ONE", 1], ["QUARTER", 0.5],
+// ["DIME", 0.2], ["PENNY", 0.04]]}
