@@ -1,4 +1,4 @@
-<!--
+/*--
 https://learn.freecodecamp.org/front-end-libraries/sass/store-data-with-sass-variables
 
 Sass: Store Data with Sass Variables
@@ -52,24 +52,30 @@ Create a variable $text-color and set it to red. Then change the value of the co
   rel="stylesheet"
   type="text/css"
   href="3.01 Store Data with Sass Variables.css"
-/> -->
+*/
 
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="3.01 Store Data with Sass Variables.scss"
-/>
+import React from "react";
+import "./3.01 Store Data with Sass Variables.sass";
 
-<h1 class="header">Learn Sass</h1>
-<div class="blog-post">
-  <h2>Some random title</h2>
-  <p>This is a paragraph with some random text in it</p>
-</div>
-<div class="blog-post">
-  <h2>Header #2</h2>
-  <p>Here is some more random text.</p>
-</div>
-<div class="blog-post">
-  <h2>Here is another header</h2>
-  <p>Even more random text within a paragraph</p>
-</div>
+class sass_01 extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1 className="header">Learn Sass</h1>
+        <div className="blog-post">
+          <h2>Some random title</h2>
+          <p>This is a paragraph with some random text in it</p>
+        </div>
+        <div className="blog-post">
+          <h2>Header #2</h2>
+          <p>Here is some more random text.</p>
+        </div>
+        <div className="blog-post">
+          <h2>Here is another header</h2>
+          <p>Even more random text within a paragraph</p>
+        </div>
+      </div>
+    );
+  }
+}
+export default sass_01;
