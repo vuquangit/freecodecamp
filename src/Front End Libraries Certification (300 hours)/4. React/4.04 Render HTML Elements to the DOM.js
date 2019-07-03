@@ -30,8 +30,20 @@ with id='challenge-node' available for you to use. Make sure you don't change th
     // change code below this line
 */
 
+/* //Result:
+const JSX = (
+  <div>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
+);
+// change code below this line
+
+ReactDOM.render(JSX, document.getElementById("challenge-node"));
+*/
+
 import React from "react";
-import ReactDOM from "react-dom";
+
 const JSX = () => (
   <div>
     <h1>Hello World</h1>
@@ -39,14 +51,9 @@ const JSX = () => (
   </div>
 );
 
-// class ReactJS extends React.Component {
-//   render() {
-//     return <div id="challenge-node">{JSX}</div>;
-//   }
-// }
-//export default ReactJS;
-
-export default function ReactJS() {
-  return <div id="challenge-node" />;
+class ReactJS extends React.Component {
+  render() {
+    return <JSX />;
+  }
 }
-//ReactDOM.render(JSX, document.getElementById("challenge-node"));
+export default ReactJS;

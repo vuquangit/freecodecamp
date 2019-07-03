@@ -60,7 +60,7 @@ import "./3.01 Store Data with Sass Variables.sass";
 class sass_01 extends React.Component {
   render() {
     return (
-      <div>
+      <div className="sass-01">
         <h1 className="header">Learn Sass</h1>
         <div className="blog-post">
           <h2>Some random title</h2>

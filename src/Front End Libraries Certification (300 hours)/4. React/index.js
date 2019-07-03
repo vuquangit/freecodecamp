@@ -3,7 +3,7 @@ import ItemsList from "../../components/ShowItems";
 import react_01 from "./4.01 Create a Simple JSX Element";
 import react_02 from "./4.02 Create a Complex JSX Element";
 import react_03 from "./4.03 Add Comments in JSX";
-import react_04 from "./4.04 Render HTML Elements to the DOM"; /*
+import react_04 from "./4.04 Render HTML Elements to the DOM";
 import react_05 from "./4.05 Define an HTML Class in JSX";
 import react_06 from "./4.06 Learn About Self-Closing JSX Tags";
 import react_07 from "./4.07 Create a Stateless Functional Component";
@@ -16,7 +16,7 @@ import react_13 from "./4.13 Write a React Component from Scratch";
 import react_14 from "./4.14 Pass Props to a Stateless Functional Component";
 import react_15 from "./4.15 Pass an Array as Props";
 import react_16 from "./4.16 Use Default Props";
-import react_17 from "./4.17 Override Default Props";
+import react_17 from "./4.17 Override Default Props"; /*
 import react_18 from "./4.18 Use PropTypes to Define the Props You Expect";
 import react_19 from "./4.19 Access Props Using this.props";
 import react_20 from "./4.20 Review Using Props with Stateless Functional Components";
@@ -62,20 +62,72 @@ const ReatcJSItems = [
     id: 4,
     title: "Render HTML Elements to the DOM",
     component: react_04
-  } /*, 
-{ id: 5, title: "Define an HTML Class in JSX", component: react_05}, 
-{ id: 6, title: "Learn About Self-Closing JSX Tags", component: react_06}, 
-{ id: 7, title: "Create a Stateless Functional Component", component: react_07}, 
-{ id: 8, title: "Create a React Component", component: react_08}, 
-{ id: 9, title: "Create a Component with Composition", component: react_09}, 
-{ id: 10, title: "Use React to Render Nested Components", component: react_10}, 
-{ id: 11, title: "Compose React Components", component: react_11}, 
-{ id: 12, title: "Render a Class Component to the DOM", component: react_12}, 
-{ id: 13, title: "Write a React Component from Scratch", component: react_13}, 
-{ id: 14, title: "Pass Props to a Stateless Functional Component", component: react_14}, 
-{ id: 15, title: "Pass an Array as Props", component: react_15}, 
-{ id: 16, title: "Use Default Props", component: react_16}, 
-{ id: 17, title: "Override Default Props", component: react_17}, 
+  },
+  {
+    id: 5,
+    title: "Define an HTML Class in JSX",
+    component: react_05
+  },
+  {
+    id: 6,
+    title: "Learn About Self-Closing JSX Tags",
+    component: react_06
+  },
+  {
+    id: 7,
+    title: "Create a Stateless Functional Component",
+    component: react_07
+  },
+  {
+    id: 8,
+    title: "Create a React Component",
+    component: react_08
+  },
+  {
+    id: 9,
+    title: "Create a Component with Composition",
+    component: react_09
+  },
+  {
+    id: 10,
+    title: "Use React to Render Nested Components",
+    component: react_10
+  },
+  {
+    id: 11,
+    title: "Compose React Components",
+    component: react_11
+  },
+  {
+    id: 12,
+    title: "Render a Class Component to the DOM",
+    component: react_12
+  },
+  {
+    id: 13,
+    title: "Write a React Component from Scratch",
+    component: react_13
+  },
+  {
+    id: 14,
+    title: "Pass Props to a Stateless Functional Component",
+    component: react_14
+  },
+  {
+    id: 15,
+    title: "Pass an Array as Props",
+    component: react_15
+  },
+  {
+    id: 16,
+    title: "Use Default Props",
+    component: react_16
+  },
+  {
+    id: 17,
+    title: "Override Default Props",
+    component: react_17
+  } /*,
 { id: 18, title: "Use PropTypes to Define the Props You Expect", component: react_18}, 
 { id: 19, title: "Access Props Using this.props", component: react_19}, 
 { id: 20, title: "Review Using Props with Stateless Functional Components", component: react_20}, 
