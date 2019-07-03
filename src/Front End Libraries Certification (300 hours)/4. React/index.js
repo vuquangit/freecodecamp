@@ -16,7 +16,7 @@ import react_13 from "./4.13 Write a React Component from Scratch";
 import react_14 from "./4.14 Pass Props to a Stateless Functional Component";
 import react_15 from "./4.15 Pass an Array as Props";
 import react_16 from "./4.16 Use Default Props";
-import react_17 from "./4.17 Override Default Props"; /*
+import react_17 from "./4.17 Override Default Props";
 import react_18 from "./4.18 Use PropTypes to Define the Props You Expect";
 import react_19 from "./4.19 Access Props Using this.props";
 import react_20 from "./4.20 Review Using Props with Stateless Functional Components";
@@ -33,7 +33,7 @@ import react_30 from "./4.30 Pass State as Props to Child Components";
 import react_31 from "./4.31 Pass a Callback as Props";
 import react_32 from "./4.32 Use the Lifecycle Method componentWillMount";
 import react_33 from "./4.33 Use the Lifecycle Method componentDidMount";
-import react_34 from "./4.34 Add Event Listeners";
+import react_34 from "./4.34 Add Event Listeners"; /*
 import react_35 from "./4.35 Manage Updates with Lifecycle Methods";
 import react_36 from "./4.36 Optimize Re-Renders with shouldComponentUpdate";
 import react_37 from "./4.37 Introducing Inline Styles";
@@ -127,24 +127,92 @@ const ReatcJSItems = [
     id: 17,
     title: "Override Default Props",
     component: react_17
-  } /*,
-{ id: 18, title: "Use PropTypes to Define the Props You Expect", component: react_18}, 
-{ id: 19, title: "Access Props Using this.props", component: react_19}, 
-{ id: 20, title: "Review Using Props with Stateless Functional Components", component: react_20}, 
-{ id: 21, title: "Create a Stateful Component", component: react_21}, 
-{ id: 22, title: "Render State in the User Interface", component: react_22}, 
-{ id: 23, title: "Render State in the User Interface Another Way", component: react_23}, 
-{ id: 24, title: "Set State with this.setState", component: react_24}, 
-{ id: 25, title: "Bind 'this' to a Class Method", component: react_25}, 
-{ id: 26, title: "Use State to Toggle an Element", component: react_26}, 
-{ id: 27, title: "Write a Simple Counter", component: react_27}, 
-{ id: 28, title: "Create a Controlled Input", component: react_28}, 
-{ id: 29, title: "Create a Controlled Form", component: react_29}, 
-{ id: 30, title: "Pass State as Props to Child Components", component: react_30}, 
-{ id: 31, title: "Pass a Callback as Props", component: react_31}, 
-{ id: 32, title: "Use the Lifecycle Method componentWillMount", component: react_32}, 
-{ id: 33, title: "Use the Lifecycle Method componentDidMount", component: react_33}, 
-{ id: 34, title: "Add Event Listeners", component: react_34}, 
+  },
+  {
+    id: 18,
+    title: "Use PropTypes to Define the Props You Expect",
+    component: react_18
+  },
+  {
+    id: 19,
+    title: "Access Props Using this.props",
+    component: react_19
+  },
+  {
+    id: 20,
+    title: "Review Using Props with Stateless Functional Components",
+    component: react_20
+  },
+  {
+    id: 21,
+    title: "Create a Stateful Component",
+    component: react_21
+  },
+  {
+    id: 22,
+    title: "Render State in the User Interface",
+    component: react_22
+  },
+  {
+    id: 23,
+    title: "Render State in the User Interface Another Way",
+    component: react_23
+  },
+  {
+    id: 24,
+    title: "Set State with this.setState",
+    component: react_24
+  },
+  {
+    id: 25,
+    title: "Bind 'this' to a Class Method",
+    component: react_25
+  },
+  {
+    id: 26,
+    title: "Use State to Toggle an Element",
+    component: react_26
+  },
+  {
+    id: 27,
+    title: "Write a Simple Counter",
+    component: react_27
+  },
+  {
+    id: 28,
+    title: "Create a Controlled Input",
+    component: react_28
+  },
+  {
+    id: 29,
+    title: "Create a Controlled Form",
+    component: react_29
+  },
+  {
+    id: 30,
+    title: "Pass State as Props to Child Components",
+    component: react_30
+  },
+  {
+    id: 31,
+    title: "Pass a Callback as Props",
+    component: react_31
+  },
+  {
+    id: 32,
+    title: "Use the Lifecycle Method componentWillMount",
+    component: react_32
+  },
+  {
+    id: 33,
+    title: "Use the Lifecycle Method componentDidMount",
+    component: react_33
+  },
+  {
+    id: 34,
+    title: "Add Event Listeners",
+    component: react_34
+  } /*, 
 { id: 35, title: "Manage Updates with Lifecycle Methods", component: react_35}, 
 { id: 36, title: "Optimize Re-Renders with shouldComponentUpdate", component: react_36}, 
 { id: 37, title: "Introducing Inline Styles", component: react_37}, 
