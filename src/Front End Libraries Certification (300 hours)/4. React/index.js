@@ -41,14 +41,13 @@ import react_38 from "./4.38 Add Inline Styles in React";
 import react_39 from "./4.39 Use Advanced JavaScript in React Render Method";
 import react_40 from "./4.40 Render with an IfElse Condition";
 import react_41 from "./4.41 Use && for a More Concise Conditional";
-import react_42 from "./4.42 Use a Ternary Expression for Conditional Rendering"; /*
+import react_42 from "./4.42 Use a Ternary Expression for Conditional Rendering";
 import react_43 from "./4.43 Render Conditionally from Props";
 import react_44 from "./4.44 Change Inline CSS Conditionally Based on Component State";
 import react_45 from "./4.45 Use Array.map() to Dynamically Render Elements";
 import react_46 from "./4.46 Give Sibling Elements a Unique Key Attribute";
 import react_47 from "./4.47 Use Array.filter() to Dynamically Filter an Array";
 import react_48 from "./4.48 Render React on the Server with renderToString";
-*/
 
 const ReatcJSItems = [
   { id: 1, title: "Create a Simple JSX Element", component: react_01 },
@@ -252,14 +251,37 @@ const ReatcJSItems = [
     id: 42,
     title: "Use a Ternary Expression for Conditional Rendering",
     component: react_42
-  } /*, 
-{ id: 43, title: "Render Conditionally from Props", component: react_43}, 
-{ id: 44, title: "Change Inline CSS Conditionally Based on Component State", component: react_44}, 
-{ id: 45, title: "Use Array.map() to Dynamically Render Elements", component: react_45}, 
-{ id: 46, title: "Give Sibling Elements a Unique Key Attribute", component: react_46}, 
-{ id: 47, title: "Use Array.filter() to Dynamically Filter an Array", component: react_47}, 
-{ id: 48, title: "Render React on the Server with renderToString", component: react_48}, 
-*/
+  },
+  {
+    id: 43,
+    title: "Render Conditionally from Props",
+    component: react_43
+  },
+  {
+    id: 44,
+    title: "Change Inline CSS Conditionally Based on Component State",
+    component: react_44
+  },
+  {
+    id: 45,
+    title: "Use Array.map() to Dynamically Render Elements",
+    component: react_45
+  },
+  {
+    id: 46,
+    title: "Give Sibling Elements a Unique Key Attribute",
+    component: react_46
+  },
+  {
+    id: 47,
+    title: "Use Array.filter() to Dynamically Filter an Array",
+    component: react_47
+  },
+  {
+    id: 48,
+    title: "Render React on the Server with renderToString",
+    component: react_48
+  }
 ];
 
 class ReactJS extends React.Component {
