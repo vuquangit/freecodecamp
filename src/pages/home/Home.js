@@ -22,6 +22,7 @@ class Home extends React.Component {
           </a>
           <Link to="/sass">Learn Sass</Link>
           <Link to="/reactjs">Learn ReactJS</Link>
+          <Link to="/redux">Learn Redux</Link>
         </header>
       </div>
     );
