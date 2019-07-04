@@ -33,15 +33,15 @@ import react_30 from "./4.30 Pass State as Props to Child Components";
 import react_31 from "./4.31 Pass a Callback as Props";
 import react_32 from "./4.32 Use the Lifecycle Method componentWillMount";
 import react_33 from "./4.33 Use the Lifecycle Method componentDidMount";
-import react_34 from "./4.34 Add Event Listeners"; /*
+import react_34 from "./4.34 Add Event Listeners";
 import react_35 from "./4.35 Manage Updates with Lifecycle Methods";
 import react_36 from "./4.36 Optimize Re-Renders with shouldComponentUpdate";
 import react_37 from "./4.37 Introducing Inline Styles";
 import react_38 from "./4.38 Add Inline Styles in React";
 import react_39 from "./4.39 Use Advanced JavaScript in React Render Method";
-import react_40 from "./4.40 Render with an If/Else Condition";
+import react_40 from "./4.40 Render with an IfElse Condition";
 import react_41 from "./4.41 Use && for a More Concise Conditional";
-import react_42 from "./4.42 Use a Ternary Expression for Conditional Rendering";
+import react_42 from "./4.42 Use a Ternary Expression for Conditional Rendering"; /*
 import react_43 from "./4.43 Render Conditionally from Props";
 import react_44 from "./4.44 Change Inline CSS Conditionally Based on Component State";
 import react_45 from "./4.45 Use Array.map() to Dynamically Render Elements";
@@ -212,15 +212,47 @@ const ReatcJSItems = [
     id: 34,
     title: "Add Event Listeners",
     component: react_34
+  },
+  {
+    id: 35,
+    title: "Manage Updates with Lifecycle Methods",
+    component: react_35
+  },
+  {
+    id: 36,
+    title: "Optimize Re-Renders with shouldComponentUpdate",
+    component: react_36
+  },
+  {
+    id: 37,
+    title: "Introducing Inline Styles",
+    component: react_37
+  },
+  {
+    id: 38,
+    title: "Add Inline Styles in React",
+    component: react_38
+  },
+  {
+    id: 39,
+    title: "Use Advanced JavaScript in React Render Method",
+    component: react_39
+  },
+  {
+    id: 40,
+    title: "Render with an If/Else Condition",
+    component: react_40
+  },
+  {
+    id: 41,
+    title: "Use && for a More Concise Conditional",
+    component: react_41
+  },
+  {
+    id: 42,
+    title: "Use a Ternary Expression for Conditional Rendering",
+    component: react_42
   } /*, 
-{ id: 35, title: "Manage Updates with Lifecycle Methods", component: react_35}, 
-{ id: 36, title: "Optimize Re-Renders with shouldComponentUpdate", component: react_36}, 
-{ id: 37, title: "Introducing Inline Styles", component: react_37}, 
-{ id: 38, title: "Add Inline Styles in React", component: react_38}, 
-{ id: 39, title: "Use Advanced JavaScript in React Render Method", component: react_39}, 
-{ id: 40, title: "Render with an If/Else Condition", component: react_40}, 
-{ id: 41, title: "Use && for a More Concise Conditional", component: react_41}, 
-{ id: 42, title: "Use a Ternary Expression for Conditional Rendering", component: react_42}, 
 { id: 43, title: "Render Conditionally from Props", component: react_43}, 
 { id: 44, title: "Change Inline CSS Conditionally Based on Component State", component: react_44}, 
 { id: 45, title: "Use Array.map() to Dynamically Render Elements", component: react_45}, 
