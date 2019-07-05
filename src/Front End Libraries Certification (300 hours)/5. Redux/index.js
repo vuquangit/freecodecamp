@@ -8,6 +8,10 @@ import redux_05 from "./5.05 Dispatch an Action Event";
 import redux_06 from "./5.06 Handle an Action in the Store";
 import redux_07 from "./5.07 Use a Switch Statement to Handle Multiple Actions";
 import redux_08 from "./5.08 Use const for Action Types";
+import redux_09 from "./5.09 Register a Store Listener";
+import redux_10 from "./5.10 Combine Multiple Reducers";
+import redux_11 from "./5.11 Send Action Data to the Store";
+import redux_12 from "./5.12 Use Middleware to Handle Asynchronous Actions";
 
 const ReduxItems = [
   { id: 1, title: "Create a Redux Store", component: redux_01 },
@@ -25,6 +29,26 @@ const ReduxItems = [
     id: 8,
     title: "Use const for Action Types",
     component: redux_08
+  },
+  {
+    id: 9,
+    title: "Register a Store Listener",
+    component: redux_09
+  },
+  {
+    id: 10,
+    title: "Combine Multiple Reducers",
+    component: redux_10
+  },
+  {
+    id: 11,
+    title: "Send Action Data to the Store",
+    component: redux_11
+  },
+  {
+    id: 12,
+    title: "Use Middleware to Handle Asynchronous Actions",
+    component: redux_12
   }
 ];
 
